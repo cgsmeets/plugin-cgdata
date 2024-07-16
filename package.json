@@ -54,6 +54,9 @@
     "topics": {
       "hello": {
         "description": "Commands to say hello."
+      },
+      "data": {
+        "external": true
       }
     },
     "flexibleTaxonomy": true
