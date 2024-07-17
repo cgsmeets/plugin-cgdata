@@ -88,7 +88,11 @@ export default class DataMove extends SfCommand<DataMoveResult> {
 
     if (!MapCGACCL.has(flags['name'])) {
       this.log('SUPPORTED OBJECTS');
-      this.log (MapCGACCL);
+
+      let message = '';
+      for (const f of MapCGACCL.keys()) message += f +'\n';
+      this.log (message);
+
       this.exit(1);
     }
     const ACCLobject = MapCGACCL.get(flags['name']);
